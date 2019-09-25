@@ -2,6 +2,7 @@
 This fork includes some changes to the [original alinz/react-native-share-extension](https://github.com/alinz/react-native-share-extension) for my specific use case; getting URL's and document HTML from a page.
 
 ## Changes:
+- Added a .podspec file in the root of the project. Use by adding this to your Podfile: `pod 'ReactNativeShareExtension', :podspec => '../node_modules/react-native-share-extension/ReactNativeShareExtension.podspec'`
 - Uses a `ExtensionPreprocessingJS` (GetDocumentData.js) to get the: url, title and html from a webpage
 - Changes to `ReactNativeShareExtension.m` to get the data from the `ExtensionPreprocessingJS` file, see `DATA_IDENTIFIER` in `ReactNativeShareExtension.m` 
 - Prefers the URL if no webpage is loaded
